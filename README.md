@@ -15,5 +15,17 @@
 | ✨ Arabic Manuscript Digitization | Hard       | 🚧 | [Kaggle Challenge](https://www.kaggle.com/t/2e7a0c79424d4e388ae666ee55b578e7) |
 
 ---
-
-<pre><code> ``` Aidatathon/ ├── mini-transformer/ # Transformer from Scratch implementation │ ├── poem.txt # Training dataset sample │ ├── train.py # Script to train the model │ ├── generate.py # Text generation from prompt │ ├── model.pth # Saved model weights │ ├── transformer.py # Transformer architecture (from scratch) │ ├── .gitignore # Files/folders excluded from version control │ └── README.md # Project explanation and usage │ ├── Churn Detection.ipynb # Churn classification model ├── Phone addiction challenge.ipynb # Phone usage regression model ├── Sentiment Analysis.ipynb # Text sentiment classifier └── README.md # ← You're here! ``` </code></pre>
+Aidatathon/
+├── mini-transformer/ # Transformer from Scratch implementation
+│ ├── poem.txt # Training dataset sample
+│ ├── train.py # Script to train the model
+│ ├── generate.py # Text generation from prompt
+│ ├── model.pth # Saved model weights
+│ ├── transformer.py # Transformer architecture (from scratch)
+│ ├── .gitignore # Files/folders excluded from version control
+│ └── README.md # Project explanation and usage
+│
+├── Churn Detection.ipynb # Churn classification model
+├── Phone addiction challenge.ipynb # Phone usage regression model
+├── Sentiment Analysis.ipynb # Text sentiment classifier
+└── README.md # ← You're here!
