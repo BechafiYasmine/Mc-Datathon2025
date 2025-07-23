@@ -3,3 +3,8 @@ __pycache__/
 *.pt 
 *.log 
 .ipynb_checkpoints/ 
+__pycache__/ 
+*.pyc 
+*.pt 
+*.log 
+.ipynb_checkpoints/ 
