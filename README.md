@@ -16,19 +16,4 @@
 
 ---
 
-## 📁 Project Structure
-
-Aidatathon/
-├── mini-transformer/ # Transformer from Scratch implementation
-| ├── poem.txt               # Ton dataset (déjà présent)
-| ├── train.py               # Script d'entraînement
-| ├── generate.py            # Script pour générer du texte
-| ├── model.pth              # Fichier du modèle sauvegardé (après entraînement)
-| ├── transformer.py       # le modèle
-| ├── .gitignore         # Specifies files and folders to exclude from version control (e.g. cache, model weights)
-| └── README.md              # Explications et instructions
-|
-├── Churn Detection.ipynb # Churn classification model
-├── Phone addiction challenge.ipynb # Addiction level regression model
-├── Sentiment Analysis.ipynb # Text sentiment classifier
-└── README.md # ← You're here!
+<pre><code> ``` Aidatathon/ ├── mini-transformer/ # Transformer from Scratch implementation │ ├── poem.txt # Training dataset sample │ ├── train.py # Script to train the model │ ├── generate.py # Text generation from prompt │ ├── model.pth # Saved model weights │ ├── transformer.py # Transformer architecture (from scratch) │ ├── .gitignore # Files/folders excluded from version control │ └── README.md # Project explanation and usage │ ├── Churn Detection.ipynb # Churn classification model ├── Phone addiction challenge.ipynb # Phone usage regression model ├── Sentiment Analysis.ipynb # Text sentiment classifier └── README.md # ← You're here! ``` </code></pre>
