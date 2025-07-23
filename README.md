@@ -16,16 +16,4 @@
 
 ---
 Aidatathon/
-├── mini-transformer/ # Transformer from Scratch implementation
-│ ├── poem.txt # Training dataset sample
-│ ├── train.py # Script to train the model
-│ ├── generate.py # Text generation from prompt
-│ ├── model.pth # Saved model weights
-│ ├── transformer.py # Transformer architecture (from scratch)
-│ ├── .gitignore # Files/folders excluded from version control
-│ └── README.md # Project explanation and usage
-│
-├── Churn Detection.ipynb # Churn classification model
-├── Phone addiction challenge.ipynb # Phone usage regression model
-├── Sentiment Analysis.ipynb # Text sentiment classifier
-└── README.md # ← You're here!
+<pre> <code> ``` Aidatathon/ ├── mini-transformer/ # Transformer from Scratch implementation │ ├── poem.txt # Training dataset sample │ ├── train.py # Script to train the model │ ├── generate.py # Text generation from prompt │ ├── model.pth # Saved model weights │ ├── transformer.py # Transformer architecture (from scratch) │ ├── .gitignore # Files/folders excluded from version control │ └── README.md # Project explanation and usage │ ├── Churn Detection.ipynb # Churn classification model ├── Phone addiction challenge.ipynb # Phone usage regression model ├── Sentiment Analysis.ipynb # Text sentiment classifier └── README.md # ← You're here! ``` </code> </pre>
