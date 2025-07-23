@@ -1,63 +1,98 @@
 
 # ✨ Challenge: Build Your Own Transformer from Scratch
 
-This is a minimal implementation of a decoder-only Transformer trained on a small poetic dataset.
-
-## 🧠 What It Does
-
-- Learns from a small paragraph of text  
-- Predicts the next character one-by-one  
-- Generates creative continuations from a prompt  
-
-## 📁 Files
-
-- `transformer.py` - Model & training logic  
-- `train.py` - Training script  
-- `generate.py` - Sampling/generation script  
-- `poem.txt` - Your training data  
-- `model.pt` - Trained model checkpoint  
-
-## 🚀 How to Run
-
-### 1. Train the model
-
-    python train.py
-
-### 2. Generate text
-
-    python generate.py
+This project showcases a **minimal yet complete implementation** of a decoder-only Transformer, trained on a small poetic dataset for character-level text generation.
 
 ---
 
-✨ Challenge: Build Your Own Transformer from Scratch
+## 🧠 Overview
 
-🔥 Minimal Transformer — Character-Level Text Generator
+- Implements core components of a Transformer **from scratch** (without high-level libraries)
+- Learns to generate poetic text **character by character**
+- Predicts the next token based on context using **self-attention**
+- Demonstrates creative text generation from prompt words like: `life`, `night`, `journey`
 
-This project implements a decoder-only Transformer from scratch (like GPT) that learns to generate poetic text character by character.
+---
 
-🧠 What It Does
-- Learns patterns from a small poetic dataset
-- Predicts the next character given a prompt
-- Produces fluent poetic continuations (e.g., for words like life, journey, night)
+## 📁 Project Structure
 
-🧱 Core Components
-- Token + Positional Embeddings
-- Multi-head Self-Attention
-- Feedforward layers
-- Masked attention for autoregressive behavior
-- Residual connections + LayerNorm
+```
+mini-transformer/
+├── poem.txt          # Training dataset
+├── train.py          # Model training script
+├── generate.py       # Script to generate text from a prompt
+├── model.pt          # Trained model checkpoint
+├── transformer.py    # Core model architecture
+└── .gitignore        # Ignore cache and weights in version control
+```
 
-📈 Training Summary
-- Dataset: Small poetic lines (100–500 characters)
-- Context size: 64 tokens
-- Epochs: 300 — final loss ≈ 0.15
-- Optimizer: Adam (lr = 1e-3)
+---
 
-✨ Results
-- Prompts like life, journey, night produce creative, structured poetic text
-- Clear improvement in fluency and theme control
-- Shows how Transformers handle sequence generation even with minimal data
+## 🧱 Key Components
 
-🛠 Challenges & Ideas
-- Difficulties: Implementing masked attention, overfitting on small data
-- Future: Move to word-level tokens, add an encoder, use a larger corpus
+- **Token + Positional Embeddings**: Encode input character and position
+- **Masked Multi-Head Self-Attention**: Enables autoregressive learning
+- **Feedforward Layers**: Nonlinear transformations on hidden states
+- **Residual Connections + LayerNorm**: Improve gradient flow and training stability
+
+---
+
+## 📊 Training Summary
+
+- **Dataset**: Small poetic lines (100–500 characters)
+- **Context Size**: 64
+- **Epochs**: 300
+- **Final Loss**: ~0.15
+- **Optimizer**: Adam with learning rate 1e-3
+
+---
+
+## ✨ Sample Generation
+
+Prompt → Output:
+
+```
+life:
+The sun rises beyond the hills with quiet grace.
+Each morning brings a promise not yet broken.
+
+journey:
+Each step forward rewrites the past behind.
+Footprints fade but meaning stays.
+```
+
+> 💡 The model adapts style and theme based on input prompts.
+
+---
+
+## 🚀 How to Use
+
+### 1. Train the Model
+
+```bash
+python train.py
+```
+
+### 2. Generate Text from Prompt
+
+```bash
+python generate.py
+```
+
+---
+
+## 🛠 Challenges & Future Directions
+
+### Key Learnings
+- Properly implementing **masked attention**
+- Managing overfitting on small datasets
+- Fine-tuning residual + normalization behavior
+
+### Improvements to Explore
+- Move to **word-level tokenization**
+- Train on **larger corpora** (e.g., Shakespeare, Wikipedia)
+- Add an **encoder** for seq-to-seq tasks
+
+---
+
+This project is a great foundation to understand modern NLP models and experiment with creative text generation. 🚀
